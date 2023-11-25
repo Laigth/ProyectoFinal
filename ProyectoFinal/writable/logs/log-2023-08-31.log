@@ -1,0 +1,9 @@
+CRITICAL - 2023-08-31 00:37:32 --> "register2" is not a valid rule.
+in SYSTEMPATH\Controller.php on line 172.
+ 1 SYSTEMPATH\Controller.php(172): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('register2')
+ 2 SYSTEMPATH\Controller.php(138): CodeIgniter\Controller->setValidator('register2', [])
+ 3 APPPATH\Controllers\Usuarios.php(26): CodeIgniter\Controller->validate('register2')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

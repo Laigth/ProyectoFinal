@@ -1,0 +1,625 @@
+CRITICAL - 2023-10-26 01:54:34 --> Invalid file: "mascotas/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascotas/create.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('mascotas/create', [], true)
+ 3 APPPATH\Controllers\Mascotas.php(24): view('mascotas/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mascotas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascotas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:51:00 --> Invalid file: "mascotas/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascotas/create.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('mascotas/create', [], true)
+ 3 APPPATH\Controllers\Mascotas.php(24): view('mascotas/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mascotas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascotas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 13:59:34 --> Undefined variable $producto
+in APPPATH\Views\productos\create.php on line 14.
+ 1 APPPATH\Views\productos\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 5 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 13:59:36 --> Undefined variable $producto
+in APPPATH\Views\productos\create.php on line 14.
+ 1 APPPATH\Views\productos\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 5 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 13:59:36 --> Undefined variable $producto
+in APPPATH\Views\productos\create.php on line 14.
+ 1 APPPATH\Views\productos\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 5 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 13:59:36 --> Undefined variable $producto
+in APPPATH\Views\productos\create.php on line 14.
+ 1 APPPATH\Views\productos\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 5 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 13:59:37 --> Undefined variable $producto
+in APPPATH\Views\productos\create.php on line 14.
+ 1 APPPATH\Views\productos\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 5 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 15:55:16 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:17:15 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:17:17 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:29:53 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:47:03 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:47:33 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:50:02 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:51:20 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:53:17 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:00:58 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:01:01 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:01:43 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:12:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:12:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:13:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:28:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:29:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:29:12 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 91.
+ 1 APPPATH\Controllers\Ventas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:09:37 --> syntax error, unexpected token "var"
+in APPPATH\Controllers\Ventas.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:09:42 --> syntax error, unexpected token "var"
+in APPPATH\Controllers\Ventas.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:09:42 --> syntax error, unexpected token "var"
+in APPPATH\Controllers\Ventas.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:09:43 --> syntax error, unexpected token "var"
+in APPPATH\Controllers\Ventas.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:09:43 --> syntax error, unexpected token "var"
+in APPPATH\Controllers\Ventas.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:09:46 --> syntax error, unexpected token "var"
+in APPPATH\Controllers\Ventas.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:14:41 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 71.
+ 1 APPPATH\Controllers\Ventas.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:21:35 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 74.
+ 1 APPPATH\Controllers\Ventas.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:22:11 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 74.
+ 1 APPPATH\Controllers\Ventas.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:22:35 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 74.
+ 1 APPPATH\Controllers\Ventas.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:29:05 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 74.
+ 1 APPPATH\Controllers\Ventas.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:36:40 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:37:07 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:37:41 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:37:42 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:37:43 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:37:43 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:49 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:50 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:51 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:51 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:51 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:52 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:52 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:52 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:38:53 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:40:56 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:40:57 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:40:58 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:40:58 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:40:58 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:41:03 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:42:10 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:43:26 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:43:27 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:43:27 --> Invalid file: "ventas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 3 APPPATH\Controllers\Ventas.php(29): view('ventas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 19:08:33 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 74.
+ 1 APPPATH\Controllers\Ventas.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 19:55:52 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 74.
+ 1 APPPATH\Controllers\Ventas.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 20:17:25 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 71.
+ 1 APPPATH\Controllers\Ventas.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 20:20:18 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 71.
+ 1 APPPATH\Controllers\Ventas.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 20:31:27 --> Undefined array key "idClientes"
+in APPPATH\Controllers\Ventas.php on line 71.
+ 1 APPPATH\Controllers\Ventas.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->finalizarCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:05:05 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:05:12 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:11:11 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:11:15 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:14:55 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:14:56 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 23:15:08 --> Undefined array key "idClientes"
+in APPPATH\Views\ventas\index.php on line 238.
+ 1 APPPATH\Views\ventas\index.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClientes"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 238)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(30): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

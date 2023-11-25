@@ -1,0 +1,44 @@
+CRITICAL - 2023-09-28 01:47:14 --> Undefined variable $title
+in APPPATH\Views\ventas\index.php on line 4.
+ 1 APPPATH\Views\ventas\index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->buscarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 01:47:33 --> Undefined variable $title
+in APPPATH\Views\ventas\index.php on line 4.
+ 1 APPPATH\Views\ventas\index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->buscarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 01:49:31 --> Undefined variable $title
+in APPPATH\Views\ventas\index.php on line 4.
+ 1 APPPATH\Views\ventas\index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->buscarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 01:50:13 --> Undefined variable $title
+in APPPATH\Views\ventas\index.php on line 7.
+ 1 APPPATH\Views\ventas\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->buscarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

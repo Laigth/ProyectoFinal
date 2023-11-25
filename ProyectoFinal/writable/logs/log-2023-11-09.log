@@ -1,0 +1,1056 @@
+CRITICAL - 2023-11-09 11:08:59 --> Undefined variable $pager
+in APPPATH\Views\clientes\listar.php on line 72.
+ 1 APPPATH\Views\clientes\listar.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/listar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(99): view('clientes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 11:10:06 --> Undefined variable $pager
+in APPPATH\Views\clientes\listar.php on line 70.
+ 1 APPPATH\Views\clientes\listar.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/listar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(99): view('clientes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 11:23:19 --> Invalid file: "reportes/reportes.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reportes/reportes.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('reportes/reportes', [], true)
+ 3 APPPATH\Controllers\Reportes.php(51): view('reportes/reportes')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->Reportes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 11:23:57 --> Invalid file: "reportes/reportes.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reportes/reportes.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('reportes/reportes', [], true)
+ 3 APPPATH\Controllers\Reportes.php(51): view('reportes/reportes')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 11:25:27 --> mysqli_sql_exception: Unknown column 'ventas.idCliente' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 11:25:27 --> Unknown column 'ventas.idCliente' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 11:27:32 --> mysqli_sql_exception: Unknown column 'ventas.idCliente' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 11:27:32 --> Unknown column 'ventas.idCliente' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 11:49:03 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 11:49:03 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 11:50:15 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 11:50:15 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 12:45:57 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 12:45:57 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-07\' AND \' 2023-11-05\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-07\' AND \' 2023-11-05\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-07\' AND \' 2023-11-05\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-07\' AND \' 2023-11-05\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 12:53:49 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 12:53:49 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 12:59:06 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 12:59:06 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-09\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-09\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-09\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-09\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 13:19:48 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 13:19:48 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 13:30:45 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 13:30:45 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-02\' AND \' 2023-11-08\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 13:46:43 --> Undefined variable $data
+in APPPATH\Views\ventas\reportes.php on line 45.
+ 1 APPPATH\Views\ventas\reportes.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(51): view('ventas/reportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:12:31 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 14:12:31 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'\' AND \' \'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'\' AND \' \'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'\' AND \' \'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'\' AND \' \'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:12:44 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 14:12:44 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:15:06 --> Invalid file: "reportes.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reportes.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('reportes', [], true)
+ 3 APPPATH\Controllers\Reportes.php(80): view('reportes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:16:49 --> Invalid file: "reportes.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reportes.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('reportes', [], true)
+ 3 APPPATH\Controllers\Reportes.php(80): view('reportes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:28:32 --> Invalid file: "reportes.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reportes.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('reportes', [], true)
+ 3 APPPATH\Controllers\Reportes.php(80): view('reportes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:40:58 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 14:40:58 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-08\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 15:43:40 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 15:43:40 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-06\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-06\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-06\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-06\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 15:44:29 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 15:44:29 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-10\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 15:44:33 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 15:44:33 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `ventas`.`fechaRegistro`, `clientes`.`razonSocial`, `ventas`.`total`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`fechaRegistro` BETWEEN \'2023-11-01\' AND \' 2023-11-07\'', [], false)
+ 5 APPPATH\Controllers\Reportes.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->buscarProductoFecha()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:22:46 --> Undefined variable $producto
+in APPPATH\Views\categoria\listar.php on line 33.
+ 1 APPPATH\Views\categoria\listar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:24:19 --> Undefined variable $producto
+in APPPATH\Views\categoria\listar.php on line 33.
+ 1 APPPATH\Views\categoria\listar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:24:27 --> Undefined variable $producto
+in APPPATH\Views\categoria\listar.php on line 33.
+ 1 APPPATH\Views\categoria\listar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:24:51 --> Undefined variable $producto
+in APPPATH\Views\categoria\listar.php on line 34.
+ 1 APPPATH\Views\categoria\listar.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:29:06 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(85): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:30:22 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(60): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:33:20 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(60): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:47:04 --> Undefined variable $categoria_deshabilitados
+in APPPATH\Views\categoria\listar.php on line 66.
+ 1 APPPATH\Views\categoria\listar.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria_deshabilitados', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:50:03 --> Undefined variable $categoria_deshabilitados
+in APPPATH\Views\categoria\listar.php on line 66.
+ 1 APPPATH\Views\categoria\listar.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria_deshabilitados', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:54:19 --> Undefined variable $categoria_deshabilitados
+in APPPATH\Views\categoria\listar.php on line 66.
+ 1 APPPATH\Views\categoria\listar.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria_deshabilitados', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 16:54:23 --> Undefined variable $categoria_deshabilitados
+in APPPATH\Views\categoria\listar.php on line 66.
+ 1 APPPATH\Views\categoria\listar.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria_deshabilitados', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:00:25 --> Undefined variable $categoria_deshabilitados
+in APPPATH\Views\categoria\listar.php on line 67.
+ 1 APPPATH\Views\categoria\listar.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria_deshabilitados', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:05:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(61): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:05:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(61): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:05:26 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(61): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:07:57 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:10:55 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:11:00 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:12:22 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:12:23 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:12:53 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:13:13 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:15:28 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(72): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:17:12 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:17:13 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:17:14 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:17:14 --> Undefined variable $pager
+in APPPATH\Views\categoria\listar.php on line 84.
+ 1 APPPATH\Views\categoria\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\categoria\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('categoria/listar', [], true)
+ 5 APPPATH\Controllers\Categoria.php(19): view('categoria/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:17:35 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(72): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:21:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(73): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:28:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:28:08 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('11', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:28:20 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:28:56 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Categoria.php(71): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->disable('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 18:13:27 --> Undefined variable $clientes
+in APPPATH\Views\clientes\listar.php on line 47.
+ 1 APPPATH\Views\clientes\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/listar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(19): view('clientes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 18:15:00 --> Undefined variable $clientes
+in APPPATH\Views\clientes\listar.php on line 47.
+ 1 APPPATH\Views\clientes\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\clientes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/listar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(19): view('clientes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 23:09:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'veterinariabd', 3306, '', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Productos.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Productos->index()
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Productos.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Productos->index()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-09 23:09:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Productos`
+WHERE `Estado` = :Estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Productos.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

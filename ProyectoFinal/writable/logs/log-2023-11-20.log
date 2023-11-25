@@ -1,0 +1,177 @@
+CRITICAL - 2023-11-20 10:39:08 --> Undefined variable $datos
+in APPPATH\Views\ventas\reportes.php on line 49.
+ 1 APPPATH\Views\ventas\reportes.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(14): view('ventas/reportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:23:40 --> Undefined variable $fechaInicio
+in APPPATH\Controllers\Reportes.php on line 14.
+ 1 APPPATH\Controllers\Reportes.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fechaInicio', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Reportes.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:23:44 --> Undefined variable $fechaInicio
+in APPPATH\Controllers\Reportes.php on line 14.
+ 1 APPPATH\Controllers\Reportes.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fechaInicio', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Reportes.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:25:44 --> mysqli_sql_exception: Unknown column 'Productos.precio' in 'field list' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `Product...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Product...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Product...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `Product...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Models\VentasModel.php(100): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Reportes.php(27): App\Models\VentasModel->obtenerProductosVendidos('2023-10-20 00:0...', '2023-11-21 00:0...')
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-20 11:25:44 --> Unknown column 'Productos.precio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `Productos`.`nombreP`, `Productos`.`precio`, COUNT(DetalleVentas.idProductos) as totalVendidos, SUM(Productos.precio * DetalleVentas.cantidadV) as totalRecaudado
+FROM `Ventas`
+JOIN `DetalleVentas` ON `Ventas`.`id` = `DetalleVentas`.`idVentas`
+JOIN `Productos` ON `DetalleVentas`.`idProductos` = `Productos`.`id`
+WHERE `Ventas`.`fechaRegistro` >= \'2023-10-20 00:00:00\'
+AND `Ventas`.`fechaRegistro` < \'2023-11-21 00:00:00\'
+GROUP BY `Productos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Productos`.`nombreP`, `Productos`.`precio`, COUNT(DetalleVentas.idProductos) as totalVendidos, SUM(Productos.precio * DetalleVentas.cantidadV) as totalRecaudado
+FROM `Ventas`
+JOIN `DetalleVentas` ON `Ventas`.`id` = `DetalleVentas`.`idVentas`
+JOIN `Productos` ON `DetalleVentas`.`idProductos` = `Productos`.`id`
+WHERE `Ventas`.`fechaRegistro` >= \'2023-10-20 00:00:00\'
+AND `Ventas`.`fechaRegistro` < \'2023-11-21 00:00:00\'
+GROUP BY `Productos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Productos`.`nombreP`, `Productos`.`precio`, COUNT(DetalleVentas.idProductos) as totalVendidos, SUM(Productos.precio * DetalleVentas.cantidadV) as totalRecaudado
+FROM `Ventas`
+JOIN `DetalleVentas` ON `Ventas`.`id` = `DetalleVentas`.`idVentas`
+JOIN `Productos` ON `DetalleVentas`.`idProductos` = `Productos`.`id`
+WHERE `Ventas`.`fechaRegistro` >= \'2023-10-20 00:00:00\'
+AND `Ventas`.`fechaRegistro` < \'2023-11-21 00:00:00\'
+GROUP BY `Productos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `Productos`.`nombreP`, `Productos`.`precio`, COUNT(DetalleVentas.idProductos) as totalVendidos, SUM(Productos.precio * DetalleVentas.cantidadV) as totalRecaudado
+FROM `Ventas`
+JOIN `DetalleVentas` ON `Ventas`.`id` = `DetalleVentas`.`idVentas`
+JOIN `Productos` ON `DetalleVentas`.`idProductos` = `Productos`.`id`
+WHERE `Ventas`.`fechaRegistro` >= :Ventas.fechaRegistro:
+AND `Ventas`.`fechaRegistro` < :Ventas.fechaRegistro.1:
+GROUP BY `Productos`.`id`', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(100): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Reportes.php(27): App\Models\VentasModel->obtenerProductosVendidos('2023-10-20 00:00:00', '2023-11-21 00:00:00')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:28:03 --> Attempt to read property "id" on array
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:33:16 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:38 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:41 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:41 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:42 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:42 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:43 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:36:43 --> Undefined array key "id"
+in APPPATH\Views\ventas\reportes.php on line 51.
+ 1 APPPATH\Views\ventas\reportes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\reportes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/reportes', [], true)
+ 5 APPPATH\Controllers\Reportes.php(30): view('ventas/reportes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes->reportes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

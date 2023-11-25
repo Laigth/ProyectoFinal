@@ -1,0 +1,728 @@
+ERROR - 2023-10-31 00:44:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'veterinariabd', 3306, '', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->index('4')
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->index('4')
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-31 00:44:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Productos`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Ventas.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 00:45:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'veterinariabd', 3306, '', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Productos.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Productos->index()
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Productos.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Productos->index()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-31 00:45:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Productos`
+WHERE `Estado` = :Estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Productos.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 00:47:36 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:36 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:37 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:37 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:37 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:37 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:38 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:38 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:38 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:38 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:38 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:38 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:39 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:39 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:48:19 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:24 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:25 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:26 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:26 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:26 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:26 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:26 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:27 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:27 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:27 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:27 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:27 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:28 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:28 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:28 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:28 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:28 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:00:29 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:01:11 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:01:12 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:01:12 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 02:01:12 --> mysqli_sql_exception: Column 'idClientes' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ve...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ve...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ve...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ve...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}

@@ -1,0 +1,11 @@
+CRITICAL - 2023-10-05 18:27:24 --> Undefined array key "carnet_usuario"
+in APPPATH\Views\ventas\index.php on line 42.
+ 1 APPPATH\Views\ventas\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "carnet_usuario"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/index', [], true)
+ 5 APPPATH\Controllers\Ventas.php(16): view('ventas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

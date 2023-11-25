@@ -1,0 +1,100 @@
+ERROR - 2023-10-17 15:46:56 --> mysqli_sql_exception: Unknown column 'Estado' in 'where clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Usuarios.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-17 15:46:56 --> Unknown column 'Estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `Estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `Estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `Estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `Estado` = :Estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Usuarios.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 16:01:42 --> Invalid file: "medicos/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('medicos/create.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('medicos/create', [], true)
+ 3 APPPATH\Controllers\Medicos.php(12): view('medicos/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Medicos->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Medicos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 23:13:59 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Medicos.php(36): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Medicos->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Medicos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 23:20:08 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Medicos.php(36): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Medicos->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Medicos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 23:20:15 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Medicos.php(36): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Medicos->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Medicos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 23:23:20 --> mysqli_sql_exception: Column 'nombres' cannot be null in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Me...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Me...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Me...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Me...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Medicos.php(37): CodeIgniter\Model->insert(Array)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Medicos->store()
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Medicos))
+#10 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-17 23:23:20 --> Column 'nombres' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Medicos` (`nombres`, `apellido`, `carnet`, `correo_electronico`, `telefono`, `especialidad`, `licencia`) VALUES (NULL, \'escalera\', \'4561237\', NULL, NULL, \'Cardiologo\', \'4525A4215\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Medicos` (`nombres`, `apellido`, `carnet`, `correo_electronico`, `telefono`, `especialidad`, `licencia`) VALUES (NULL, \'escalera\', \'4561237\', NULL, NULL, \'Cardiologo\', \'4525A4215\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Medicos` (`nombres`, `apellido`, `carnet`, `correo_electronico`, `telefono`, `especialidad`, `licencia`) VALUES (NULL, \'escalera\', \'4561237\', NULL, NULL, \'Cardiologo\', \'4525A4215\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Medicos` (`nombres`, `apellido`, `carnet`, `correo_electronico`, `telefono`, `especialidad`, `licencia`) VALUES (:nombres:, :apellido:, :carnet:, :correo_electronico:, :telefono:, :especialidad:, :licencia:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Medicos.php(37): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Medicos->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Medicos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

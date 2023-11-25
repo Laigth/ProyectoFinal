@@ -1,0 +1,40 @@
+ERROR - 2023-09-02 01:46:31 --> mysqli_sql_exception: Unknown column 'activo' in 'field list' in C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoFinal\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save(Array)
+#9 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+#10 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#11 C:\Program Files\Xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Program Files\Xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-02 01:46:31 --> Unknown column 'activo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre_usuario`, `correo_electronico`, `contrasena`, `tipo_usuario`, `codigo_verificacion`, `activo`) VALUES (\'Luis\', \'fernandozeballos@gmail.com\', \'$2y$10$Z37I6kXnllsIkbCAG7jooOSgk15P2v2k8Kc/usXZ1Ot.W3qeFXuF.\', \'cliente\', 44606333, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre_usuario`, `correo_electronico`, `contrasena`, `tipo_usuario`, `codigo_verificacion`, `activo`) VALUES (\'Luis\', \'fernandozeballos@gmail.com\', \'$2y$10$Z37I6kXnllsIkbCAG7jooOSgk15P2v2k8Kc/usXZ1Ot.W3qeFXuF.\', \'cliente\', 44606333, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre_usuario`, `correo_electronico`, `contrasena`, `tipo_usuario`, `codigo_verificacion`, `activo`) VALUES (\'Luis\', \'fernandozeballos@gmail.com\', \'$2y$10$Z37I6kXnllsIkbCAG7jooOSgk15P2v2k8Kc/usXZ1Ot.W3qeFXuF.\', \'cliente\', 44606333, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre_usuario`, `correo_electronico`, `contrasena`, `tipo_usuario`, `codigo_verificacion`, `activo`) VALUES (:nombre_usuario:, :correo_electronico:, :contrasena:, :tipo_usuario:, :codigo_verificacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 01:57:35 --> Invalid file: "usuarios/cambiarContrasena.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/cambiarContrasena.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/cambiarContrasena', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(117): view('usuarios/cambiarContrasena')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarContrasena()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

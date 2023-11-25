@@ -1,0 +1,29 @@
+CRITICAL - 2023-11-10 00:45:27 --> Undefined variable $categoria
+in APPPATH\Views\productos\create.php on line 37.
+ 1 APPPATH\Views\productos\create.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\productos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 5 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 00:46:10 --> Cannot use object of type stdClass as array
+in APPPATH\Views\productos\create.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('productos/create', [], true)
+ 4 APPPATH\Controllers\Productos.php(28): view('productos/create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 01:04:47 --> foreach() argument must be of type array|object, null given
+in APPPATH\Models\VentasModel.php on line 20.
+ 1 APPPATH\Models\VentasModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Models\\VentasModel.php', 20)
+ 2 APPPATH\Controllers\Ventas.php(47): App\Models\VentasModel->agregarVenta('1', '6', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

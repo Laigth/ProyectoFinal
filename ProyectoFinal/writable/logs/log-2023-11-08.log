@@ -1,0 +1,40 @@
+CRITICAL - 2023-11-08 11:56:04 --> Undefined array key "idUsuarios"
+in APPPATH\Controllers\Ventas.php on line 117.
+ 1 APPPATH\Controllers\Ventas.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 117)
+ 2 APPPATH\Controllers\Ventas.php(49): App\Controllers\Ventas->generarComprobante(true)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 11:56:43 --> Undefined array key "idUsuarios"
+in APPPATH\Controllers\Ventas.php on line 117.
+ 1 APPPATH\Controllers\Ventas.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 117)
+ 2 APPPATH\Controllers\Ventas.php(49): App\Controllers\Ventas->generarComprobante(true)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 11:57:02 --> Undefined array key "idUsuarios"
+in APPPATH\Controllers\Ventas.php on line 117.
+ 1 APPPATH\Controllers\Ventas.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 117)
+ 2 APPPATH\Controllers\Ventas.php(49): App\Controllers\Ventas->generarComprobante(true)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 12:08:30 --> Undefined array key "idUsuarios"
+in APPPATH\Controllers\Ventas.php on line 115.
+ 1 APPPATH\Controllers\Ventas.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 115)
+ 2 APPPATH\Controllers\Ventas.php(48): App\Controllers\Ventas->generarComprobante(true)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 12:14:52 --> Attempt to read property "idUsuarios" on array
+in APPPATH\Controllers\Ventas.php on line 115.
+ 1 APPPATH\Controllers\Ventas.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idUsuarios" on array', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 115)
+ 2 APPPATH\Controllers\Ventas.php(48): App\Controllers\Ventas->generarComprobante(true)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

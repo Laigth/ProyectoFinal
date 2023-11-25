@@ -1,0 +1,42 @@
+CRITICAL - 2023-11-04 19:28:08 --> Undefined array key "nombre"
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 APPPATH\Controllers\Ventas.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 19:29:07 --> Undefined array key "fechaRegistro"
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fechaRegistro"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 19:37:39 --> Undefined array key "fechaRegistro"
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fechaRegistro"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 19:37:43 --> Undefined array key "fechaRegistro"
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fechaRegistro"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 19:37:47 --> Undefined array key "fechaRegistro"
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fechaRegistro"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 20:14:24 --> Undefined array key "fechaRegistro"
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fechaRegistro"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

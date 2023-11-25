@@ -1,0 +1,544 @@
+CRITICAL - 2023-11-05 12:16:53 --> Undefined array key "fechaRegistro"
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fechaRegistro"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 12:17:09 --> Undefined array key "precioV"
+in APPPATH\Controllers\Ventas.php on line 92.
+ 1 APPPATH\Controllers\Ventas.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioV"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 12:17:14 --> Undefined array key "precioV"
+in APPPATH\Controllers\Ventas.php on line 92.
+ 1 APPPATH\Controllers\Ventas.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioV"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 12:19:20 --> mysqli_sql_exception: Unknown column 'detalleventas.cantidadVenta' in 'field list' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 12:19:20 --> Unknown column 'detalleventas.cantidadVenta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadVenta`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadVenta`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadVenta`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadVenta`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleventas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 12:21:01 --> mysqli_sql_exception: Unknown column 'productos.nombre' in 'field list' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 12:21:01 --> Unknown column 'productos.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombre`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 12:21:44 --> mysqli_sql_exception: Unknown column 'usuarios.nombreUsuario' in 'field list' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 12:21:44 --> Unknown column 'usuarios.nombreUsuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombreUsuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuario`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 12:22:49 --> mysqli_sql_exception: Unknown column 'ventas.idCliente' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 12:22:49 --> Unknown column 'ventas.idCliente' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idCliente`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 12:23:16 --> mysqli_sql_exception: Unknown column 'detalleventas.idProducto' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 12:23:16 --> Unknown column 'detalleventas.idProducto' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProducto`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 12:24:16 --> mysqli_sql_exception: Unknown column 'detalleventas.idVenta' in 'on clause' in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 12:24:16 --> Unknown column 'detalleventas.idVenta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVenta`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 12:24:37 --> getimagesize(http://localhost/ProyectoGrado/ProyectoFinal/public//images/ferreteria.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\Libraries\fpdf\fpdf.php on line 1255.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/ProyectoGrado/ProyectoFinal/public//images/ferreteria.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Libraries\\fpdf\\fpdf.php', 1255)
+ 2 APPPATH\Libraries\fpdf\fpdf.php(1255): getimagesize('http://localhost/ProyectoGrado/ProyectoFinal/public//images/ferreteria.jpg')
+ 3 APPPATH\Libraries\fpdf\fpdf.php(890): FPDF->_parsejpg('http://localhost/ProyectoGrado/ProyectoFinal/public//images/ferreteria.jpg')
+ 4 APPPATH\Controllers\Ventas.php(121): FPDF->Image('http://localhost/ProyectoGrado/ProyectoFinal/public//images/ferreteria.jpg', 10, 10, 50)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 12:25:46 --> Undefined property: stdClass::$nombre
+in APPPATH\Controllers\Ventas.php on line 147.
+ 1 APPPATH\Controllers\Ventas.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 12:40:27 --> Undefined property: stdClass::$nombre
+in APPPATH\Controllers\Ventas.php on line 147.
+ 1 APPPATH\Controllers\Ventas.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 13:26:40 --> Undefined property: stdClass::$idClientes
+in APPPATH\Controllers\Ventas.php on line 147.
+ 1 APPPATH\Controllers\Ventas.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idClientes', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 13:28:22 --> Undefined property: stdClass::$Clientes
+in APPPATH\Controllers\Ventas.php on line 147.
+ 1 APPPATH\Controllers\Ventas.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Clientes', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 13:28:40 --> Undefined property: stdClass::$idCliente
+in APPPATH\Controllers\Ventas.php on line 147.
+ 1 APPPATH\Controllers\Ventas.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCliente', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 14:24:36 --> Attempt to read property "total" on array
+in APPPATH\Controllers\Ventas.php on line 76.
+ 1 APPPATH\Controllers\Ventas.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total" on array', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 14:26:25 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Ventas.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 14:26:25 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombre_Usuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVentas`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuarios`
+WHERE `ventas`.`id` = (\'5\',\'5\',\'1\',\'348.00\',\'1\',\'2023-11-03 11:20:39\',NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombre_Usuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVentas`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuarios`
+WHERE `ventas`.`id` = (\'5\',\'5\',\'1\',\'348.00\',\'1\',\'2023-11-03 11:20:39\',NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombre_Usuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVentas`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuarios`
+WHERE `ventas`.`id` = (\'5\',\'5\',\'1\',\'348.00\',\'1\',\'2023-11-03 11:20:39\',NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.`id`, `clientes`.`ciNit`, `clientes`.`razonSocial`, `ventas`.`fechaRegistro`, `detalleventas`.`cantidadV`, `productos`.`nombreP`, `productos`.`precioBase`, `detalleventas`.`precioUnitario`, `ventas`.`total`, `usuarios`.`nombre_Usuario`
+FROM `detalleVentas`
+JOIN `ventas` ON `ventas`.`id` = `detalleventas`.`idVentas`
+JOIN `productos` ON `productos`.`id` = `detalleventas`.`idProductos`
+JOIN `clientes` ON `clientes`.`id` = `ventas`.`idClientes`
+JOIN `usuarios` ON `usuarios`.`id` = `ventas`.`idUsuarios`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 APPPATH\Controllers\Ventas.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 14:28:07 --> Array to string conversion
+in APPPATH\Controllers\Ventas.php on line 112.
+ 1 APPPATH\Controllers\Ventas.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 14:34:24 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Ventas.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 14:35:28 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Ventas.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 14:43:33 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Ventas.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('5')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 14:55:53 --> Undefined array key "nombre_Usuario"
+in APPPATH\Controllers\Ventas.php on line 143.
+ 1 APPPATH\Controllers\Ventas.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_Usuario"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 15:08:09 --> Attempt to read property "nombre_usuario" on array
+in APPPATH\Controllers\Ventas.php on line 144.
+ 1 APPPATH\Controllers\Ventas.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre_usuario" on array', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 15:16:19 --> Undefined array key "idUsuarios"
+in APPPATH\Views\ventas\listar.php on line 39.
+ 1 APPPATH\Views\ventas\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/listar', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->mostrarVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 15:16:23 --> Undefined array key "idUsuarios"
+in APPPATH\Views\ventas\listar.php on line 39.
+ 1 APPPATH\Views\ventas\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/listar', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->mostrarVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 15:18:03 --> Undefined array key "idUsuarios"
+in APPPATH\Views\ventas\listar.php on line 39.
+ 1 APPPATH\Views\ventas\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/listar', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->mostrarVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 15:18:14 --> Undefined array key "idUsuarios"
+in APPPATH\Views\ventas\listar.php on line 39.
+ 1 APPPATH\Views\ventas\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUsuarios"', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Views\\ventas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ventas/listar', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->mostrarVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 17:09:15 --> FPDF error: Undefined font: forte B
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(513): FPDF->Error('Undefined font: forte B')
+ 2 APPPATH\Controllers\Ventas.php(119): FPDF->SetFont('forte', 'B', 15)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('4', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 17:09:42 --> FPDF error: Undefined font: forte 
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(513): FPDF->Error('Undefined font: forte ')
+ 2 APPPATH\Controllers\Ventas.php(119): FPDF->SetFont('forte', '', 15)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('4', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 17:10:27 --> FPDF error: Undefined font: showcard gothic B
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(513): FPDF->Error('Undefined font: showcard gothic B')
+ 2 APPPATH\Controllers\Ventas.php(119): FPDF->SetFont('showcard gothic', 'B', 15)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('4', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 21:07:36 --> FPDF error: Undefined font: freedom45 B
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(513): FPDF->Error('Undefined font: freedom45 B')
+ 2 APPPATH\Controllers\Ventas.php(119): FPDF->SetFont('freedom45', 'B', 15)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 21:09:19 --> FPDF error: Undefined font: freedom45 
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(513): FPDF->Error('Undefined font: freedom45 ')
+ 2 APPPATH\Controllers\Ventas.php(119): FPDF->SetFont('freedom45', '', 15)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 22:05:54 --> getimagesize(/images/fondo-Comprobante.jpg): Failed to open stream: No such file or directory
+in APPPATH\Libraries\fpdf\fpdf.php on line 1255.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(/images/fondo-Comprobante.jpg): Failed to open stream: No such file or directory', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Libraries\\fpdf\\fpdf.php', 1255)
+ 2 APPPATH\Libraries\fpdf\fpdf.php(1255): getimagesize('/images/fondo-Comprobante.jpg')
+ 3 APPPATH\Libraries\fpdf\fpdf.php(890): FPDF->_parsejpg('/images/fondo-Comprobante.jpg')
+ 4 APPPATH\Controllers\Ventas.php(107): FPDF->Image('/images/fondo-Comprobante.jpg', 0, 0, 210.0015555555555, 297.0000833333333)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 22:20:18 --> getimagesize(http://localhost/ProyectoGrado/ProyectoFinal/public//images/fondo-Comprobante.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\Libraries\fpdf\fpdf.php on line 1255.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/ProyectoGrado/ProyectoFinal/public//images/fondo-Comprobante.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Libraries\\fpdf\\fpdf.php', 1255)
+ 2 APPPATH\Libraries\fpdf\fpdf.php(1255): getimagesize('http://localhost/ProyectoGrado/ProyectoFinal/public//images/fondo-Comprobante.jpg')
+ 3 APPPATH\Libraries\fpdf\fpdf.php(890): FPDF->_parsejpg('http://localhost/ProyectoGrado/ProyectoFinal/public//images/fondo-Comprobante.jpg')
+ 4 APPPATH\Controllers\Ventas.php(107): FPDF->Image('http://localhost/ProyectoGrado/ProyectoFinal/public//images/fondo-Comprobante.jpg', 0, 0, 210.0015555555555, 297.0000833333333)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-05 23:18:39 --> date() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Ventas.php on line 137.
+ 1 APPPATH\Controllers\Ventas.php(137): date('d/m/Y', 1699037247, true)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->generarComprobante('10', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,30 @@
+ERROR - 2023-09-27 22:54:33 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.gmail.com failed: No such host is known.  in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\Program File...', 1863)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1863): fsockopen('tls://smtp.gmai...', 465, NULL, NULL, 5)
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Usuarios.php(59): CodeIgniter\Email\Email->send()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-27 22:54:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-27 22:54:33 --> 
+ERROR - 2023-09-27 22:57:15 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.gmail.com failed: No such host is known.  in C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\Program File...', 1863)
+#1 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1863): fsockopen('tls://smtp.gmai...', 465, NULL, NULL, 5)
+#2 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\app\Controllers\Usuarios.php(59): CodeIgniter\Email\Email->send()
+#6 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+#7 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Program Files\Xampp\htdocs\ProyectoGrado\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-27 22:57:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-27 22:57:15 --> 

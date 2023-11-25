@@ -1,0 +1,8 @@
+CRITICAL - 2023-11-13 14:47:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 119.
+ 1 APPPATH\Controllers\Ventas.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Program Files\\Xampp\\htdocs\\ProyectoGrado\\ProyectoFinal\\app\\Controllers\\Ventas.php', 119)
+ 2 APPPATH\Controllers\Ventas.php(55): App\Controllers\Ventas->generarComprobante(0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearVenta()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
